@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ynrcc.simpleserver.dao.TrunkItemDao">
+<!--设置domain类和数据库中表的字段一一对应，注意数据库字段和domain类中的字段名称不致，此处一定要！-->
+	<!-- 定义数据列 -->
+	<sql id="trunkItemColumns">
+		trunk_type,
+		item_code,
+		item_name
+	</sql>
+	<!-- 定义返回类型 -->
+    <resultMap id="TrunkItem" type="com.ynrcc.simpleserver.model.TrunkItem">
+        <result column="trunk_type" property="trunkType" jdbcType="INTEGER" />
+        <result column="item_code" property="itemCode" jdbcType="VARCHAR" />
+        <result column="item_name" property="itemName" jdbcType="VARCHAR" />
+    </resultMap>
+    
+    <!-- 查询单条记录 -->
+    <select id="selectItemByCode" resultMap="TrunkItem">
+        SELECT 
+        	<include refid="trunkItemColumns"/>
+        FROM trunk_item 
+        WHERE trunk_type=#{trunkType} and item_code=#{itemCode}
+    </select>
+</mapper>
