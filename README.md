@@ -1,1 +1,2 @@
 # simple_server
+一个简单的用maven搭建的springmvc+spring+mybatis 服务，项目需要用其其来开发一个简单的挡板程序做测试用。随着项目的跟进，我也会逐渐添加特性并记录，就当是框架的学习
