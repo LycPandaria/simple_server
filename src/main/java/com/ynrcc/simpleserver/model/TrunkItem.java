@@ -1,12 +1,13 @@
 package com.ynrcc.simpleserver.model;
 
+import java.io.Serializable;
 
 /**
  * 尾箱物品对照Entity
  * @author Liyingcong
  * @version 2018-12-03
  */
-public class TrunkItem {
+public class TrunkItem implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
 	private String trunkType;		// 尾箱类型
