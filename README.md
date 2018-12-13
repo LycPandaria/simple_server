@@ -4,7 +4,7 @@
 同时也准备把其作为一个备份，方便快速开发 Web 项目。
 
 ## 构建
-该项目的构建步骤记录于：[eclipse下SpringMVC+Maven+Mybatis+MySQL项目搭建](https://github.com/LycPandaria/JavaInterview/blob/master/notes/demo_springmvc%2Bmybatis%2Bmaven.md)
+该项目的构建步骤记录于：[eclipse下SpringMVC+Maven+Mybatis+MySQL项目搭建](/demo_springmvc+mybatis+maven.md)
 
 ## 运行
 1. fork() 或者 下载
