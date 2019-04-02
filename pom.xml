@@ -15,6 +15,8 @@
         <junit.version>4.10</junit.version>
         <!-- mybatis版本号 -->
         <mybatis.version>3.2.1</mybatis.version>
+        <!-- connection pool -->
+        <druid.version>1.0.18</druid.version>
     </properties>
 
     <dependencies>
@@ -127,6 +129,13 @@
     		<artifactId>fastjson</artifactId>
     		<version>1.2.7</version>
 		</dependency>
+
+        <!-- connection pool -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>1.0.18</version>
+        </dependency>
         
     </dependencies>
   

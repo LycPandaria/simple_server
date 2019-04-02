@@ -5,23 +5,23 @@
 
 ## 1.创建maven工程
 右击-->New->Other
-![1](../pic/demo1.png)
+![1](./pic/demo1.png)
 点击->Manven Porject
-![2](../pic/demo2.png)
+![2](./pic/demo2.png)
 点击->勾选快速框架
-![3](../pic/demo3.png)
+![3](./pic/demo3.png)
 输入项目名，包（Packaging，如果只是普通的项目，选jar就好了，如果是web项目就选war，这里是web项目，所以选择war）
-![4](../pic/demo4.png)
+![4](./pic/demo4.png)
 右击项目->Properties->Java Build Path->选择Libraries->点击选中 JRE System Library->Edit
-![5](../pic/demo5.png)
+![5](./pic/demo5.png)
 选择默认JRE，注：必须系统安装了JDK。
-![6](../pic/demo6.png)
+![6](./pic/demo6.png)
 点击Project Facets 去掉勾选 Dynamic Web Module 再把 Java 改为系统设置版本。
-![7](../pic/demo7.png)
+![7](./pic/demo7.png)
 再打开Project Facets ->勾选 Dynamic Web Module 选择3.0版本时，下面有个 Further configuration available... ->点击
-![8](../pic/demo8.png)
+![8](./pic/demo8.png)
 输入 content directory 地址： src/main/webapp, **勾选generate web.xml**
-![9](../pic/demo9.png)
+![9](./pic/demo9.png)
 
 ## 2.配置springmvc
 ### 添加包的依赖，编辑pom.xml文件添加如下依赖：（因为我的JDK版本是1.8所以Spring 版本必须为4.0以上）
@@ -223,7 +223,7 @@
 ```
 
 ### 加入配置文件
-![10](../pic/demo10.png)
+![10](./pic/demo10.png)
 
 **jdbc.properties**(注意自己修改相应配置)
 ```
@@ -379,7 +379,7 @@ xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.spri
 ```
 
 ### 编写 java 类
-![11](../pic/demo11.png)
+![11](./pic/demo11.png)
 
 **TrunkItemDao.java**
 ```java
@@ -458,7 +458,7 @@ public class TrunkItemService {
 ```
 
 ## 编写测试类JUnit4进行单元测试
-![12](../pic/demo12.png)
+![12](./pic/demo12.png)
 
 **SpringTest.java**
 ```java
@@ -503,10 +503,10 @@ public class TrunkItemServiceTest extends SpringTest{
 ```
 
 选中方法名->右击->Run As -> 点击 JUnit Test
-![13](../pic/demo13.png)
+![13](./pic/demo13.png)
 
 显示测试运行成功！
-![14](../pic/demo14.png)
+![14](./pic/demo14.png)
 
 ## 新建Controller
 **TrunkItemConteoller.java**
@@ -539,7 +539,7 @@ public class TrunkItemController {
 ```
 
 ### 在 /webapp/下新建 js 目录，放入 jquery 和 jason2 两个js包，可自行下载，也可以从源代码里找
-![15](../pic/demo15.png)
+![15](./pic/demo15.png)
 
 ### 在WEB-INF/ 下新建目录views，然后编写index.jsp
 **index.jsp**
@@ -589,4 +589,4 @@ function testResponseBody(){
 ```
 
 ## 最后便可以将应用在tomcat跑起来
-![16](../pic/demo.png)
+![16](./pic/demo.png)
